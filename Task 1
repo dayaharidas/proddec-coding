@@ -1,0 +1,20 @@
+#import complex math module
+
+import cmath
+
+#enter user inputs
+
+a=float(input('Enter first coefficient: '))
+b=float(input('Enter second coefficient: '))
+c=float(input('Enter third term:'))
+
+#calculate discriminant
+
+d=(b**2)-(4*a*c)
+
+#calculate the roots of the quadratic equation
+
+x1= (-b-cmath.sqrt(d))/(2*a)
+x2= (-b+cmath.sqrt(d))/(2*a)
+
+print('The roots of the equation are {},{}'.format(x1,x2))
